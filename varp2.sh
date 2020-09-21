@@ -37,3 +37,11 @@ echo "Last command return code: ${?}"
 Kachowww
 echo "Last command return code: ${?}"
 [ "${?}" -ne "0" ] && echo "Problem running last command."
+
+
+# Process IDs
+
+#$$ is the PID of the current Shell, useful for making temp files, etc where you have many scripts being run in many Shells and you need temp data store files to uniquely identify them, like /temp/script.PID_HERE
+
+#$! PID of the last run bg process. Useful to keep track of processes when they are done with their job
+
