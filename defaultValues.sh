@@ -19,6 +19,7 @@ read location  #Empty variables are null/false by default
 echo "I'll now list stuff in  ${location:-`pwd`}"     #Apparently `:-` is a shorthand for: if stuff in front is false, use the stuff after the brace expansion
 ls "${plant:-`pwd`}"
 
+#Additional syntax: ${value:=DefaultValue} will make $value not be null even if there is no user input throughout the program, hence, DefaultValue will actually be the fallback value for $value 
 
 #Random fact with spawning subprocess for no reason
 cd ../  #Bad practice here, once you spawn a sub shell using exec, you end up in another directory like this <
