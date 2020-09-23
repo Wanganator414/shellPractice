@@ -10,12 +10,13 @@
 #Case 2: Puts all that heavy stuff into a variable, so you only need to run it once
 
 HTML_FILES=$(find / -name "*.html" -print) #Output of the command in backticks (stdout) will be caught and put into the variable HTML_FILES
-echo "$HTML_FILES" | grep "/index.html$"   #Note: You need quotes around grep if you want to preserve the line by line nature of the output form all the mthl files, or else you will get one LONG line fo text
+echo "$HTML_FILES" | grep "/index.html$"   #Note: You need quotes around grep if you want to preserve the line by line nature of the output form all the html files, or else you will get one LONG line fo text
 echo "$HTML_FILES" | grep "/contents.html$"
 
 # Here's some alternate syntax $(..):
 HTML_FILES=$(find / -name "*.html" -print)
 # Stated advantage of this is that it can be nested, which the backticks cannot, but most cases you just put it in a variable and be done with the unreadable mess
+
 
 # Some other quick examples of using backticking
 
