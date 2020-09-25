@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Type stuff in"
+echo "Type stuff in"    #The ':' symbol means always true
 while :; do
     read input
     case $input in
