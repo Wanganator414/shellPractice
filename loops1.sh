@@ -3,7 +3,7 @@
 # `for` loops thru all the args given to it until done
 for i in 1 2 3 4 5; do
     echo "Kachowing ${i}"
-done    #"done" is used ot denote the end of a loop, for,white etc
+done #"done" is used ot denote the end of a loop, for,white etc
 
 # echo "\n"
 

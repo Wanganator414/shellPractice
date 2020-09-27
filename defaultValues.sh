@@ -21,6 +21,6 @@ ls "${plant:-`pwd`}"
 
 #Additional syntax: ${value:=DefaultValue} will make $value not be null even if there is no user input throughout the program, hence, DefaultValue will actually be the fallback value for $value 
 
-#Random fact with spawning subprocess for no reason
+#Random fact with spawning subprocess for no reason, like eval bash
 cd ../  #Bad practice here, once you spawn a sub shell using exec, you end up in another directory like this <
 exec bash   #Use `exit` to go back to the previous super shell....

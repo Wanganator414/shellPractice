@@ -1,4 +1,5 @@
 #!/bin/sh
+#You can choose which program to invoke while executing this script, like sh or bash or something else.
 
 # Side note, apparently the "." turned out to be a shell built-in if used like a command and with a target shell file after it, it is different than doing ./file.sh and exec file.sh apparently? 
 
@@ -11,5 +12,54 @@
 # By sourcing files, its end environment is preserved after the script ends, so what ever script runs after will be using what was left over or given to it
 
 # So stuff being sourced is kinda like actually you typing in your current shell by hand and affects it directly instead of a separate process that runs in the bg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
