@@ -9,9 +9,9 @@ Starting a personal log of various conventions and nuances I run into while brow
 ### Table of Contents
 | Commands/Topics | Description | Date |
 |:---:|:---:|:---:|:---:|
-| `` `..`, $(..), eval ``| Command Substitution |09/27/2020|
-| `echo` | `echo` vs `printf` |09/28/2020|
-| `echo` | On The Topic of Curly Braces `${..}` |09/29/2020|
+| `` `..`, $(..), eval `` | Command Substitution | 09/27/2020 |
+| `echo` | `echo` vs `printf` | 09/28/2020 |
+| `echo` | On The Topic of Curly Braces `${..}` | 09/29/202 0|
 
 <br/>
 
