@@ -1,17 +1,18 @@
-Mark             |  Penguin Boi 
-:-------------------------:|:-------------------------:
-![mark](https://commonmark.org/help/images/favicon.png)  |  ![tux](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/140px-Tux_Mono.svg.png)
+|                          Mark                           |                                              Penguin Boi                                              |
+| :-----------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
+| ![mark](https://commonmark.org/help/images/favicon.png) | ![tux](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/140px-Tux_Mono.svg.png) |
 
 ## Foreword
 
-Starting a personal log of various conventions and nuances I run into while browsing through wikis, forums, and everyday Linux usage. Loggint them down so I don't forget as easily :(.
+Starting a personal log of various conventions and nuances I run into while browsing through wikis, forums, and everyday Linux usage. Logging them down so I don't forget as easily :(.
 
 ### Table of Contents
-| Commands/Topics | Description | Date |
-|:---:|:---:|:---:|:---:|
-| `` `..`, $(..), eval `` | Command Substitution | 09/27/2020 |
-| `echo` | `echo` vs `printf` | 09/28/2020 |
-| `echo` | On The Topic of Curly Braces `${..}` | 09/29/202 0|
+
+|     Commands/Topics     |             Description              |    Date     |
+| :---------------------: | :----------------------------------: | :---------: |
+| `` `..`, $(..), eval `` |         Command Substitution         | 09/27/2020  |
+|         `echo`          |          `echo` vs `printf`          | 09/28/2020  |
+|         `echo`          | On The Topic of Curly Braces `${..}` | 09/29/2020 |
 
 <br/>
 
