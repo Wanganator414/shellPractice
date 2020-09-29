@@ -6,16 +6,16 @@ Mark             |  Penguin Boi
 
 Starting a personal log of various conventions and nuances I run into while browsing through wikis, forums, and everyday Linux usage. Loggint them down so I don't forget as easily :(.
 
-###Table of Contents
+### Table of Contents
 | Commands/Topics | Description | Date |
 |---|---|---|---|
-| [`` `..`, $(..), eval ``](#csbp) | Command Substitution |09/27/2020|
+| `` `..`, $(..), eval ``| Command Substitution |09/27/2020|
 | `echo` | `echo` vs `printf` |09/28/2020|
 | `echo` | On The Topic of Curly Braces `${..}` |09/29/2020|
 
 <br/>
 
-###Command Substitution
+### Command Substitution
 
 > ##### Last updated: 09/27/2020
 
@@ -29,6 +29,6 @@ Now we have `eval` being hated on by forum users, and for good reason apparently
 
 <br/>
 
-###`echo` vs `printf`
+### `echo` vs `printf`
 
 > ##### Last updated: 09/28/2020
