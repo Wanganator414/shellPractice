@@ -38,7 +38,7 @@ Here we have an assortment of bash constructs, it's about time I had a nice litt
 
 ---
 
-**Construct:** `(..)`
+**Construct:** **`(..)`**
 
 **Function:** Starts a new sub shell in which shell commands are run, spits out to stdout by default. Cannot be used to store to variables. If you just want to run a series of commands in one batch, use this.
 
@@ -50,7 +50,7 @@ Here we have an assortment of bash constructs, it's about time I had a nice litt
 
 ---
 
-**Construct:** `$(..)`
+**Construct:** **`$(..)`**
 
 **Function:** Command substitution of entire argument list (can have multiple commands chained together), executes commands in a sub shell in one go and return its stdout result. Can be used to store to variables.
 
@@ -64,7 +64,7 @@ MACHINE_TYPE=$(pwd | cut -d'/' -f2)  #Using a chain of commands to extract requi
 
 ---
 
-**Construct:** `((..))`
+**Construct:** **`((..))`**
 
 **Function:** Used to evaluate arithmetic operations. You must leave spaces around operators for readability and syntactical purposes. You do not need `$` (variable dereferencing) in front of variables and arrays when you are dealing with `((..))`
 
@@ -84,7 +84,7 @@ echo $var1  # var1 is now 69
 
 ---
 
-**Construct:** `$((..))`
+**Construct:** **`$((..))`**
 
 **Function:** Same as `((..))` but you can use this version to directly assign values to variables since it returns its output.
 
@@ -95,7 +95,7 @@ var1=$((74 - 5))  #Direct assignment
 echo ${var1}
 ```
 
-**Construct:** `{..}`
+**Construct:** **`{..}`**
 
 **Function:** Used for brace expansions and NOT for delimiting variables.
 
@@ -109,7 +109,7 @@ echo J{a,e,o}n  #Prints Jan, Jen, and Jon as the parts inside the brace get cycl
 
 ---
 
-**Construct:** `${..}`
+**Construct:** **`${..}`**
 
 **Function:** This construct, additional to being used for delimiting variables, is also used for parameter expansion.
 
@@ -127,7 +127,7 @@ echo ${var1:-$default} #using a default value in case var1 is null/not assigned
 
 ---
 
-**Construct:** `[..]`
+**Construct:** **`[..]`**
 
 **Function:** <ins>_NOT referring to the array syntax_</ins> This one links to the built in `test` command, used to check true/false of whatever is inside, it's normal usages are for comparing numbers and strings to each other or check if files meet certain conditions. (Sets exit code, 0 if true, otherwise sets other things depending on what was inside)
 
@@ -157,8 +157,10 @@ echo ${arr2[1]} # Prints 'b'
 
 ---
 
-**Construct:** `[[..]]`
+**Construct:** **`[[..]]`**
+
 **Function:** Essentially the updated version of `test`, has the added capability (you can use **&&** and **||** instead of **-a** and **-o**) to check whether a string matches certain regex specifications (with the **=~** syntax). This version does not conform to POSIX standard 100% so it won't work everywhere. (Sets exit codes also)
+
 **Example:**
 
 ```bash
