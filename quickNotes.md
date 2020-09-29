@@ -39,7 +39,9 @@ Here we have an assortment of bash constructs, it's about time I had a nice litt
 ---
 
 **Construct:** `(..)`
+
 **Function:** Starts a new sub shell in which shell commands are run, spits out to stdout by default. Cannot be used to store to variables. If you just want to run a series of commands in one batch, use this.
+
 **Example:**
 
 ```bash
@@ -49,7 +51,9 @@ Here we have an assortment of bash constructs, it's about time I had a nice litt
 ---
 
 **Construct:** `$(..)`
+
 **Function:** Command substitution of entire argument list (can have multiple commands chained together), executes commands in a sub shell in one go and return its stdout result. Can be used to store to variables.
+
 **Example:**
 
 ```bash
@@ -61,7 +65,9 @@ MACHINE_TYPE=$(pwd | cut -d'/' -f2)  #Using a chain of commands to extract requi
 ---
 
 **Construct:** `((..))`
+
 **Function:** Used to evaluate arithmetic operations. You must leave spaces around operators for readability and syntactical purposes. You do not need `$` (variable dereferencing) in front of variables and arrays when you are dealing with `((..))`
+
 **Example:**
 
 ```bash
@@ -79,7 +85,9 @@ echo $var1  # var1 is now 69
 ---
 
 **Construct:** `$((..))`
-**Function:** Same as `((..))` but you can use this version to directly assign values to variables.
+
+**Function:** Same as `((..))` but you can use this version to directly assign values to variables since it returns its output.
+
 **Example:**
 
 ```bash
@@ -88,7 +96,9 @@ echo ${var1}
 ```
 
 **Construct:** `{..}`
+
 **Function:** Used for brace expansions and NOT for delimiting variables.
+
 **Example:**
 
 ```bash
@@ -100,7 +110,9 @@ echo J{a,e,o}n  #Prints Jan, Jen, and Jon as the parts inside the brace get cycl
 ---
 
 **Construct:** `${..}`
+
 **Function:** This construct, additional to being used for delimiting variables, is also used for parameter expansion.
+
 **Example:**
 
 ```bash
@@ -116,7 +128,9 @@ echo ${var1:-$default} #using a default value in case var1 is null/not assigned
 ---
 
 **Construct:** `[..]`
+
 **Function:** <ins>_NOT referring to the array syntax_</ins> This one links to the built in `test` command, used to check true/false of whatever is inside, it's normal usages are for comparing numbers and strings to each other or check if files meet certain conditions. (Sets exit code, 0 if true, otherwise sets other things depending on what was inside)
+
 **Example:**
 
 ```bash
