@@ -32,7 +32,7 @@ Now we have `eval` being hated on by forum users, and for good reason apparently
 
 ### Which is Which!?
 
-> ##### Last updated: 09/28/2020
+> ##### Last updated: 09/29/2020
 
 Here we have an assortment of bash constructs, it's about time I had a nice little list to clarify their functionalities...
 
@@ -147,11 +147,37 @@ fi
 arr1[5]="kachow" # This is using left hand side syntax(LHS)
 # Similar to C style arrays where you count from index 0
 
-
+#RHS syntax
 arr2=(a b c d 4 "food" 7)  # Arrays in Bash can contain both numbers and strings
 echo ${arr2[1]} # Prints 'b'
 
-#more to come tomorrow.....
+#Looping thru array elements
+#Normally when you invoke arr2, only the first item gets returned
+#We use arr2[@] or arr2[whateverLength] to get the entire array back
+for array_item in ${arr2[@]}; do
+  echo "${array_item}"
+done
+
+#Looping thru elements using indices
+#Notice the '!', it makes arr2[@] return indices starting from 0
+for arr_index in ${!arr2[@]}; do
+  echo "${arr2[arr_index]}" #Prints the same stuff as the last one but being done in a different way
+done
+#This way is more lengthy but indices CAN be used an intermediate counter variable so you don't need to make another one
+
+
+#Populating/Changing arrays
+arr2+=( "KACHOW" 69 ) #Syntax for appending elements to an array
+echo ${arr2[@]} #Now has 2 extra items at the end
+
+#Return array size
+echo ${#arr2[@]}
+
+#Using output from commands to populate array
+arr3=( $(ls) )  #Creates an array of all files in current directory
+
+#Retrieve 2 elements beginning from index 1
+echo ${arr2[@]:1:2}
 
 ```
 
